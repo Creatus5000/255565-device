@@ -1,0 +1,20 @@
+body {
+	font: 15px normal "Open Sans", Arial, sans-serif;
+	line-height: 2em;
+	color: #464646;
+}
+
+.main-header-logo {
+	font:48px bold Gilroy, Arial, sans-serif;
+	text-transform:uppercase;
+	line-height:1.2em;
+	color:#000;
+}
+
+.footer_logo{
+	font:48px  bold Gilroy, Arial, sans-serif;
+	text-transform: uppercase;
+	line-height:1.2em;
+	color:#ffc600;
+}
+
