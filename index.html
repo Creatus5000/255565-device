@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <title>Device_Main</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet">
     </head>
     <body>
         <div class="wrap">
-            <header class="main-header">
+            <header class="main_header">
                 <h1><a class="main_header_logo">device</a></h1>
                 <form>
                     <input type="search" name="search" placeholder="Поиск по сайту">
-                    <input type="submit" value="Найти">
+                    <input class="submit_btn" type="submit" value="Найти">
                 </form>
                 <div class="login_link">
                     <a href="#">
@@ -34,7 +35,7 @@
                     <ul>
                         <li>
                             <span>Каталог товаров</span>
-                            <div class="Product_group1">
+                            <div class="product_group">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -73,17 +74,17 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li class="additional_info">
                             <a href="#">
                             Доставка
                             </a>
                         </li>
-                        <li>
+                        <li class="additional_info">
                             <a href="#">
                             Гарантия
                             </a>
                         </li>
-                        <li>
+                        <li class="additional_info">
                             <a href="#">
                             Контакты
                             </a>
@@ -117,7 +118,7 @@
                                     Самая длинная палка селфи доступна в нашем магазине. <br>
                                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                                 </p>
-                                <p><a href="catalog.html">Подробнее</a></p>
+                                <p class="btn"><a href="catalog.html">Подробнее</a></p>
                                 <table class="table_product">
                                     <tr>
                                         <td>8,5 м</td>
@@ -190,37 +191,37 @@
             <section class="product_range">
                 <ul>
                     <li>
-                        <a href="#"><img src="img/popular-1.svg" width="160" height="160" alt="Product_1">Виртуальная реальность</a>
+                        <a href="#"><img src="img/popular-1.svg"  width="97" height="55" alt="Product_1">Виртуальная реальность</a>
                         <h3>
                             Виртуальная реальность
                         </h3>
                     </li>
                     <li>
-                        <a href="catalog.html"><img src="img/popular-2.svg" width="160" height="160" alt="Product_2">Моноподы для селфи</a>
+                        <a href="catalog.html"><img src="img/popular-2.svg" width="86" height="117" alt="Product_2">Моноподы для селфи</a>
                         <h3>
                             Моноподы для селфи
                         </h3>
                     </li>
                     <li>
-                        <a href="#"><img src="img/popular-3.svg" width="160" height="160" alt="Product_3">Экшн-камеры</a>
+                        <a href="#"><img src="img/popular-3.svg" width="71" height="87" alt="Product_3">Экшн-камеры</a>
                         <h3>
                             Экшн-камеры
                         </h3>
                     </li>
                     <li>
-                        <a href="#"><img src="img/popular-4.svg" width="160" height="160" alt="Product_4">Фитнес-браслеты</a>
+                        <a href="#"><img src="img/popular-4.svg" width="107" height="65" alt="Product_4">Фитнес-браслеты</a>
                         <h3>
                             Фитнес-браслеты
                         </h3>
                     </li>
                     <li>
-                        <a href="#"><img src="img/popular-5.svg" width="160" height="160" alt="Product_5">Умные часы</a>
+                        <a href="#"><img src="img/popular-5.svg" width="56" height="98" alt="Product_5">Умные часы</a>
                         <h3>
                             Умные часы
                         </h3>
                     </li>
                     <li>
-                        <a href="#"><img src="img/popular-6.svg" width="160" height="160" alt="Product_6">Квадрокоптеры</a>
+                        <a href="#"><img src="img/popular-6.svg" width="132" height="69" alt="Product_6">Квадрокоптеры</a>
                         <h3>
                             Квадрокоптеры
                         </h3>
@@ -236,7 +237,7 @@
                     <input type="radio" id="btn-5" name="toggle">
                     <input type="radio" id="btn-6" name="toggle">
                     <div class="services_slider_labels">    
-                        <label for="btn-4">Доставка</label>
+                        <label class="btn_active" for="btn-4">Доставка</label>
                         <label for="btn-5">Гарантия</label>
                         <label for="btn-6">Кредит</label>
                     </div>
@@ -264,46 +265,34 @@
             </div>
         </section>
         <div class="wrap">
-            <section class="partners">
-                <h2 class="visually_hidden">Partners</h2>
+            <section class="brands">
+                <h2 class="visually_hidden">Brands</h2>
                 <ul>
                     <li>
                         <a href="#">
-                            <p class="brand-item-hover">
-                                <img src="img/logo-1-hover.png" width="260" height="100" alt="dji logo" class="brand-logo">
-                            </p>
-                            <p class="brand-item">
-                                <img src="img/logo-1.png"  width="260" height="100" alt="dji logo" class="brand-logo">
+                            <p class="brand_item">
+                                <img src="img/logo-1.png"  width="260" height="100" alt="dji logo" class="brand_logo">
                             </p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p class="brand-item-hover">
-                                <img src="img/logo-2-hover.png"  width="260" height="100" alt="sp gadgets logo" class="brand-logo">
-                            </p>
-                            <p class="brand-item">
-                                <img src="img/logo-2.png"  width="260" height="100" alt="sp gadgets logo" class="brand-logo">
+                            <p class="brand_item">
+                                <img src="img/logo-2.png"  width="260" height="100" alt="sp gadgets logo" class="brand_logo">
                             </p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p class="brand-item-hover">
-                                <img src="img/logo-3-hover.png"  width="260" height="100" alt="go pro logo" class="brand-logo">
-                            </p>
-                            <p class="brand-item">
-                                <img src="img/logo-3.png"  width="260" height="100" alt="go pro logo" class="brand-logo">
+                            <p class="brand_item">
+                                <img src="img/logo-3.png"  width="260" height="100" alt="go pro logo" class="brand_logo">
                             </p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p class="brand-item-hover">
-                                <img src="img/logo-4-hover.png"  width="260" height="100" alt="vive logo" class="brand-logo">
-                            </p>
-                            <p class="brand-item">
-                                <img src="img/logo-4.png"  width="260" height="100" alt="vive logo" class="brand-logo">
+                            <p class="brand_item">
+                                <img src="img/logo-4.png"  width="260" height="100" alt="vive logo" class="brand_logo">
                             </p>
                         </a>
                     </li>
@@ -326,7 +315,7 @@
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a href="#">Подробнее о нас</a>
+                    <a class="btn" href="#">Подробнее о нас</a>
                 </section>
                 <section class="contacts">
                     <h2>
@@ -336,7 +325,7 @@
                         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                     </p>
                     <a href="#"><img src="img/map.png" width="560" height="222" alt="map"></a>
-                    <a href="#">Напишите нам</a>
+                    <a class="btn" href="#">Напишите нам</a>
                 </section>
             </section>
         </div>
@@ -373,9 +362,9 @@
                 </div>
                 <div class="footer-bottom">
                     <ul>
-                        <li><a class="social-button" href="#">Facebook</a></li>
-                        <li><a class="social-button" href="#">Instagram</a></li>
-                        <li><a class="social-button" href="#">Twitter</a></li>
+                        <li><a class="social_button" href="#">Facebook</a></li>
+                        <li><a class="social_button" href="#">Instagram</a></li>
+                        <li><a class="social_button" href="#">Twitter</a></li>
                     </ul>
                     <a class="academylogo" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
                 </div>
@@ -395,8 +384,8 @@
                 <label>Текст письма:
                 <textarea name="mail_txt" id="mail" placeholder="В свободной форме"></textarea>
                 </label>
-                <input type="submit" value="Отправить">
-                <button type="button" class="popup-close">Закрыть</button>
+                <button class="send_button" type="submit" value="Отправить">Отправить</button>
+                <button  type="submit" class="popup_close">Закрыть</button>
             </form>
         </section>
         <section class="popup_map">
