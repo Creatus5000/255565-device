@@ -559,7 +559,8 @@ th
 }
 
 .send_button:active,
-.show:active
+.show:active,
+.btn:active
 {
     color: rgba(0, 0, 0, .6);
 }
@@ -640,8 +641,8 @@ th
 {
     position: absolute;
     z-index: 10;
-    top: 320px;
-    left: 1005px;
+    bottom: 167px;
+    right: 61px;
 }
 
 #btn-4:checked ~ .services_slider_labels label[for='btn-4'],
@@ -1892,14 +1893,22 @@ footer.catalog
 
 
 
+#write_popup{
+   visibility:hidden;
+}
+
+#write_popup:target{
+   visibility:visible;
+}
+
 .write_us_popup
-{
+{   
     position: fixed;
     z-index: 50;
     top: 50%;
     left: 50%;
 
-    overflow: auto;
+
 
     margin-top: -299px;
     margin-left: -480px;
@@ -1948,6 +1957,8 @@ footer.catalog
 .popup_close
 {
     font-size: 0;
+    padding:0;
+    margin:0;
 }
 
 .popup_close::after
@@ -1974,6 +1985,9 @@ footer.catalog
 {
     opacity: .3;
 }
+
+
+
 
 .write_us_popup input,
 .write_us_popup textarea
@@ -2016,12 +2030,36 @@ footer.catalog
     background-color: #fff;
 }
 
-
-
-
-
 /*write us - end*/
 
+
+/* popup_map - start */
+
+.popup_map
+{   display:none;
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    padding:0;
+    margin-top: -297px;
+    margin-left: -497px;
+    
+
+    background-color: transparent;
+    
+}
+
+
+.popup_map .popup_close::after{
+    top:28px;
+    right:41px;
+   
+}
+
+
+
+/* popup_map - end */
 
 /*catalog navigation - start*/
 
