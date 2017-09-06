@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Device_Main</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
         <link href="css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
         <div class="wrap">
@@ -331,8 +331,8 @@
                     <p>
                         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                     </p>
-                      <a class="map" href="#big_map"><img src="img/map.png" width="560" height="222" alt="map_popup"></a>
-                    <a class="btn" href="#write_popup">Напишите нам</a>
+                    <a class="map" href="#"><img src="img/map.png" width="560" height="222" alt="map_popup"></a>
+                    <a class="btn" href="#">Напишите нам</a>
                 </section>
             </section>
         </div>
@@ -377,7 +377,7 @@
                 </div>
             </div>
         </footer>
-        <section class="write_us_popup" id="write_popup">
+        <section class="write_us_popup">
             <h2 class="visually_hidden">Write Us Pop-up</h2>
             <form>
                 <div class="input_fields">
@@ -392,14 +392,13 @@
                 <textarea name="mail_txt" id="mail" placeholder="В свободной форме"></textarea>
                 </label>
                 <button class="send_button" type="submit" value="Отправить">Отправить</button>
-           
                 <button type="submit" class="popup_close">Закрыть</button>
-        
-            </section>
-        <section class="popup_map" id="bigmap">
+            </form>
+        </section>
+        <section class="popup_map">
             <h2 class="visually_hidden">Pop-up Map</h2>
             <img src="img/map-big.png" width="994" height="593" alt="map_popup">
             <button type="button" class="popup_close">Закрыть</button>
-            </section>
+        </section>
     </body>
 </html>
