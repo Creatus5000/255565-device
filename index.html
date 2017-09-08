@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Device_Main</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="wrap">
@@ -255,7 +255,7 @@
                                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                             </p>
                         </div>
-                        <!--  <div class="services_slider_slide_02">
+                        <div class="services_slider_slide_02">
                             <h2>Гарантия</h2>
                             <p>
                                 Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
@@ -266,7 +266,7 @@
                             <p>
                                 Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
                             </p>
-                            </div> -->
+                            </div>
                     </div>
                 </div>
             </div>
@@ -382,7 +382,7 @@
             <form>
                 <div class="input_fields">
                     <label>Ваше имя:<br>
-                    <input pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" class="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+                    <input pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" class="nameform" type="text" name="name" placeholder="Представьтесь, пожалуйста">
                     </label>
                     <label>Ваш e-mail:<br>
                     <input pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})" class="email" type="text" name="email" placeholder="Для отправки ответа">
@@ -392,13 +392,15 @@
                 <textarea name="mail_txt" id="mail" placeholder="В свободной форме"></textarea>
                 </label>
                 <button class="send_button" type="submit" value="Отправить">Отправить</button>
-                <button type="submit" class="popup_close">Закрыть</button>
+                <button  class="popup_close" type="submit">Закрыть</button>
             </form>
         </section>
         <section class="popup_map">
             <h2 class="visually_hidden">Pop-up Map</h2>
-            <img src="img/map-big.png" width="994" height="593" alt="map_popup">
-            <button type="button" class="popup_close">Закрыть</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.5274293158209!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!5e0!3m2!1suk!2sua!4v1504831499195" width="994" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+           
+            <button class="popup_close" type="button">Закрыть</button>
         </section>
+      <script src="js/popup.js"></script>
     </body>
 </html>
