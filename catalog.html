@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Device_Catalog</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/style.min.css" type="text/css">
     </head>
     <body>
         <div class="wrap">
@@ -17,23 +17,23 @@
                     </form>
                     <ul class="sign_in">
                         <li>
-                            <a class="login" href="#">
+                            <a class="login" href="login.html">
                             Валентин Петухов
                             </a>
                         </li>
                         <li>
-                            <a class="logout">Выйти
+                            <a class="logout" href="catalog.html">Выйти
                             </a>
                         </li>
                     </ul>
                     <ul class="shopping">
                         <li>
-                            <a class="comparison" href="#">
+                            <a class="comparison" href="comparison.html">
                             Сравнить
                             </a>
                         </li>
                         <li>
-                            <a class="cart" href="#">
+                            <a class="cart" href="cart.html">
                             Корзина
                             </a>
                         </li>
@@ -42,11 +42,11 @@
                 <nav class="header_navigation">
                     <ul>
                         <li class="header_catalog">
-                            <span>Каталог товаров</span>
+                            <a class="product_catalog" href="#">Каталог товаров</a>
                             <div class="product_group">
                                 <ul class="product_group_col1">
                                     <li>
-                                        <a href="#">
+                                        <a href="catalog_virtual_reality.html">
                                         Виртуальная реальность
                                         </a>
                                     </li>
@@ -56,26 +56,26 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_cameras.html">
                                         Экшн-камеры
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="product_group_col2">
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_fitness.html">
                                         Фитнес-браслеты
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_watches.html">
                                         Умные часы
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="product_group_col3">
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_copters.html">
                                         Квадрокоптеры
                                         </a>
                                     </li>
@@ -83,17 +83,17 @@
                             </div>
                         </li>
                         <li class="additional_info">
-                            <a href="#">
+                            <a href="delivery.html">
                             Доставка
                             </a>
                         </li>
                         <li class="additional_info">
-                            <a href="#">
+                            <a href="warranty.html">
                             Гарантия
                             </a>
                         </li>
                         <li class="additional_info">
-                            <a href="#">
+                            <a href="contacts.html">
                             Контакты
                             </a>
                         </li>
@@ -104,23 +104,24 @@
                 <h2>Моноподы для селфи</h2>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs_link"><a href="index.html">Главная</a></li>
-                    <li class="breadcrumbs_link"><a href="#">Каталог товаров</a></li>
+                    <li class="breadcrumbs_link"><a href="catalog.html">Каталог товаров</a></li>
                     <li class="breadcrumbs_link"><a>Моноподы для селфи</a></li>
                 </ul>
             </section>
         </div>
         <section class="product_choice">
-            <h2 class="visually_hidden">Product Choice</h2>
+            <h2 class="visually_hidden">Выбор товаров</h2>
             <div class="wrap">
                 <div class="product_choice_container">
                     <section class="filter_left">
-                        <h2 class="visually_hidden">Filter</h2>
+                        <h2 class="visually_hidden">Фильтр выбора товаров</h2>
                         <div class="filter_head">
                             <b>Фильтр:</b>
                         </div>
-                        <form action="form.php" method="GET">
+                        <form  action="https://echo.htmlacademy.ru" method="post">
                             <fieldset class="slider_bar">
                                 <legend>Стоимость</legend>
+                                <div class="line"></div>
                                 <div class="range_filter">
                                     <div class="range_controls">
                                         <div class="scale">
@@ -137,6 +138,7 @@
                             </fieldset>
                             <fieldset class="checkbox">
                                 <legend>Цвет</legend>
+                                <div class="line"></div>
                                 <input id="black" type="checkbox" name="black" value="black" checked>
                                 <label for="black">Черный</label>
                                 <input type="checkbox" name="white" id="white" value="white">
@@ -145,13 +147,14 @@
                                 <label for="blue">Синий</label>
                                 <input id="red" type="checkbox" name="red" value="red" checked>
                                 <label for="red">Красный</label>
-                                <input id="pink" type="checkbox" name="Pink" value="Pink">
+                                <input id="pink" type="checkbox" name="pink" value="pink">
                                 <label for="pink">Розовый</label>
                             </fieldset>
                             <fieldset class="radio">
                                 <legend>Bluetooth</legend>
-                                <input type="radio" id="yes" name="toggle" checked>
-                                <input type="radio" id="no" name="toggle">
+                                <div class="line"></div>
+                                <input type="radio" id="yes" name="bluetooth" value="yes" checked>
+                                <input type="radio" id="no" name="bluetooth" value="no">
                                 <div class="radiolabels">
                                     <label for="yes"></label>
                                     <label for="no"></label>        
@@ -161,7 +164,7 @@
                         </form>
                     </section>
                     <section class="product_album_right">
-                        <h2 class="visually_hidden">Product Album</h2>
+                        <h2 class="visually_hidden">Альбом товаров</h2>
                         <div class="ranking_navigation">
                             <b>Сортировка:</b>
                             <ul class="ranking_list">
@@ -175,7 +178,7 @@
                             </ul>
                         </div>
                         <section class="album_container">
-                            <h2 class="visually_hidden">Album Container</h2>
+                            <h2 class="visually_hidden">Контейнер альбома</h2>
                             <article class="item">
                                 <div class="visible">
                                     <img src="img/item-1.png" width="360" height="380" alt="product1_item1">
@@ -185,7 +188,7 @@
                                     </div>
                                 </div>
                                 <div class="item_details">
-                                    <h3><a href="#">Любительская селфи-палка</a></h3>
+                                    <h3><a href="amator_monopod.html">Любительская селфи-палка</a></h3>
                                     <p>500 руб</p>
                                 </div>
                             </article>
@@ -198,7 +201,7 @@
                                     <a class="compare" href="#">Добавить к сравнению</a>
                                 </div>
                                 <div class="item_details">
-                                    <h3><a href="#">Профессиональная<br> селфи-палка</a></h3>
+                                    <h3><a href="professional_monopod.html">Профессиональная<br> селфи-палка</a></h3>
                                     <p>1 500 руб</p>
                                 </div>
                             </article>
@@ -211,7 +214,7 @@
                                     <a class="compare" href="#">Добавить к сравнению</a>
                                 </div>
                                 <div class="item_details">
-                                    <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+                                    <h3><a href="floating_monopod.html">Непотопляемая селфи-палка</a></h3>
                                     <p>2 500 руб</p>
                                 </div>
                             </article>
@@ -224,7 +227,7 @@
                                     <a class="compare" href="#">Добавить к сравнению</a>
                                 </div>
                                 <div class="item_details">
-                                    <h3><a href="#">Селфи-палка &laquo;Следуй за <br>мной&raquo;</a></h3>
+                                    <h3><a href="followme_monopod.html">Селфи-палка &laquo;Следуй за <br>мной&raquo;</a></h3>
                                     <p>4 900 руб</p>
                                 </div>
                             </article>
@@ -246,27 +249,27 @@
             <div class="wrap">
                 <div class="footer_top">
                     <a href="index.html" class="footer_logo">device</a>
-                    <ul>
-                        <li><a class="login" href="#">Выйти</a></li>
-                        <li><a class="comparison" href="#">Сравнить</a></li>
-                        <li><a class="cart" href="#">Корзина</a></li>
+                    <ul class="catalog_login">
+                        <li><a class="login" href="catalog.html">Выйти</a></li>
+                        <li><a class="comparison" href="comparison.html">Сравнить</a></li>
+                        <li><a class="cart" href="cart.html">Корзина</a></li>
                     </ul>
                 </div>
-                <div class="footer_middle">
+                <div class="catalog footer_middle">
                     <p class="address">г. Москва, ул. Строителей, 15</p>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="delivery.html">
                             Доставка
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="warranty.html">
                             Гарантия
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="contacts.html">
                             Контакты
                             </a>
                         </li>
@@ -275,11 +278,11 @@
                 </div>
                 <div class="footer_bottom">
                     <ul class="social_buttons">
-                        <li><a class="fb" href="#">Facebook</a></li>
-                        <li><a class="ingrm" href="#">Instagram</a></li>
-                        <li><a class="twt" href="#">Twitter</a></li>
+                        <li><a class="fb" href="https://www.facebook.com">Facebook</a></li>
+                        <li><a class="ingrm" href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a class="twt" href="https://twitter.com/">Twitter</a></li>
                     </ul>
-                    <a class="academylogo" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
+                    <a class="academylogo" href="https://htmlacademy.ru/intensive/htmlcss">HTMLACADEMY</a>
                 </div>
             </div>
         </footer>

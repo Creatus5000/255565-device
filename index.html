@@ -15,17 +15,17 @@
                         <input class="input_search" type="search" name="search" placeholder="Поиск по сайту">
                         <input class="submit_btn" type="submit" value="Найти">
                     </form>
-                    <a class="login" href="#">
+                    <a class="login" href="login.html">
                     Войти
                     </a>
                     <ul class="shopping">
                         <li>
-                            <a class="comparison" href="#">
+                            <a class="comparison" href="comparison.html">
                             Сравнить
                             </a>
                         </li>
                         <li>
-                            <a class="cart" href="#">
+                            <a class="cart" href="cart.html">
                             Корзина
                             </a>
                         </li>
@@ -34,11 +34,11 @@
                 <nav class="header_navigation">
                     <ul>
                         <li class="header_catalog">
-                            <span>Каталог товаров</span>
+                            <a class="product_catalog" href="#">Каталог товаров</a>
                             <div class="product_group">
                                 <ul class="product_group_col1">
                                     <li>
-                                        <a href="#">
+                                        <a href="catalog_virtual_reality.html">
                                         Виртуальная реальность
                                         </a>
                                     </li>
@@ -48,26 +48,26 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_cameras.html">
                                         Экшн-камеры
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="product_group_col2">
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_fitness.html">
                                         Фитнес-браслеты
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_watches.html">
                                         Умные часы
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="product_group_col3">
                                     <li>
-                                        <a href="catalog.html">
+                                        <a href="catalog_copters.html">
                                         Квадрокоптеры
                                         </a>
                                     </li>
@@ -75,17 +75,17 @@
                             </div>
                         </li>
                         <li class="additional_info">
-                            <a href="#">
+                            <a href="delivery.html">
                             Доставка
                             </a>
                         </li>
                         <li class="additional_info">
-                            <a href="#">
+                            <a href="warranty.html">
                             Гарантия
                             </a>
                         </li>
                         <li class="additional_info">
-                            <a href="#">
+                            <a href="contacts.html">
                             Контакты
                             </a>
                         </li>
@@ -93,17 +93,15 @@
                 </nav>
             </header>
             <section class="product_slider">
-                <h2 class="visually_hidden">Product Slider</h2>
+                <h2 class="visually_hidden">Выбор товаров</h2>
                 <div class="slider_pos">
-                    <div class="product_slider_buttons">
-                        <input type="radio" id="btn-1" name="toggle_upper" checked>
-                        <input type="radio" id="btn-2" name="toggle_upper">
-                        <input type="radio" id="btn-3" name="toggle_upper">
-                        <div class="product_slider_labels">    
-                            <label for="btn-1"></label>
-                            <label for="btn-2"></label>
-                            <label for="btn-3"></label>
-                        </div>
+                    <input type="radio" id="btn-1" name="toggle_upper" checked>
+                    <input type="radio" id="btn-2" name="toggle_upper">
+                    <input type="radio" id="btn-3" name="toggle_upper">
+                    <div class="product_slider_labels">    
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                        <label for="btn-3"></label>
                     </div>
                     <div class="product_slider_frame">
                         <div class="slider_slide_01">
@@ -149,7 +147,7 @@
                                     Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
                                     не пропускать занятия и соблюдать диету.
                                 </p>
-                                <p><a class="btn" href="#">Подробнее</a></p>
+                                <p><a class="btn" href="catalog_watches.html">Подробнее</a></p>
                                 <table class="table_product_02">
                                     <tr>
                                         <td class="col1">48 часов</td>
@@ -159,8 +157,8 @@
                                     </tr>
                                 </table>
                             </div>
-                            </div> 
-                            <div class="slider_slide_03">
+                        </div>
+                        <div class="slider_slide_03">
                             <div class="slider_img_01">
                                 <img src="img/slider-3.png" width="526" height="500" alt="img_slider_3">
                             </div>
@@ -174,7 +172,7 @@
                                     Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
                                     мощным лазером, замаскированным под стандартную камеру.
                                 </p>
-                                <p><a class="btn" href="#">Подробнее</a></p>
+                                <p><a class="btn" href="catalog_copters.html">Подробнее</a></p>
                                 <table class="table_product_03">
                                     <tr>
                                         <td class="col1">800 м</td>
@@ -191,10 +189,10 @@
                 </div>
             </section>
             <section class="product_range">
-                <h2 class="visually_hidden">Product Range</h2>
+                <h2 class="visually_hidden">Ассортимент товаров</h2>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="catalog_virtual_reality.html">
                             <div class="product_range_link"><img src="img/popular-1.svg"  width="97" height="55" alt="Product_1"> </div>
                             <p>Виртуальная реальность</p>
                         </a>
@@ -203,30 +201,30 @@
                         <a class="monopods" href="catalog.html">
                             <div class="product_range_link"><img src="img/popular-2.svg" width="86" height="117" alt="Product_2"></div>
                             <p>
-                                Моноподы для селфи
+                                Моноподы <br> для селфи
                             </p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="cameras" href="catalog_cameras.html">
                             <div class="product_range_link"><img src="img/popular-3.svg"  width="71" height="87" alt="Product_3"> </div>
                             <p>Экшн-камеры</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="fitness" href="catalog_fitness.html">
                             <div class="product_range_link"><img src="img/popular-4.svg" width="107" height="65" alt="Product_4"></div>
                             <p>Фитнес-браслеты</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="watch" href="catalog_watches.html">
                             <div class="product_range_link"><img src="img/popular-5.svg" width="56" height="98" alt="Product_5"></div>
                             <p>Умные часы</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="catalog_copters.html">
                             <div class="product_range_link"><img src="img/popular-6.svg" width="132" height="69" alt="Product_5"></div>
                             <p>Квадрокоптеры</p>
                         </a>
@@ -235,18 +233,16 @@
             </section>
         </div>
         <section class="additional_services">
-            <h2 class="visually_hidden">Additional Services</h2>
+            <h2 class="visually_hidden">Дополнительные услуги</h2>
             <div class="wrap">
                 <div class="additional_services_container">
-                    <div class="services_slider">
-                        <input type="radio" id="btn-4" name="toggle_lower" checked> 
-                        <input type="radio" id="btn-5" name="toggle_lower">
-                        <input type="radio" id="btn-6" name="toggle_lower">
-                        <div class="services_slider_labels">    
-                            <label class="btn_active" for="btn-4">Доставка</label>
-                            <label for="btn-5">Гарантия</label>
-                            <label for="btn-6">Кредит</label>
-                        </div>
+                    <input type="radio" id="btn-4" name="toggle_lower" checked> 
+                    <input type="radio" id="btn-5" name="toggle_lower">
+                    <input type="radio" id="btn-6" name="toggle_lower">
+                    <div class="services_slider_labels">    
+                        <label class="btn_active" for="btn-4">Доставка</label>
+                        <label for="btn-5">Гарантия</label>
+                        <label for="btn-6">Кредит</label>
                     </div>
                     <div class="services_slider_details">
                         <div class="services_slider_slide_01">
@@ -260,20 +256,20 @@
                             <p>
                                 Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
                             </p>
-                            </div> 
-                            <div class="services_slider_slide_03">
+                        </div>
+                        <div class="services_slider_slide_03">
                             <h2 class="credit">Кредит</h2>
                             <p>
                                 Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
                             </p>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="wrap">
             <section class="brands">
-                <h2 class="visually_hidden">Brands</h2>
+                <h2 class="visually_hidden">Торговые марки</h2>
                 <ul>
                     <li>
                         <a href="#">
@@ -306,7 +302,7 @@
                 </ul>
             </section>
             <section class="about_us">
-                <h2 class="visually_hidden">About Us</h2>
+                <h2 class="visually_hidden">О нас</h2>
                 <section class="about_us_txt">
                     <h2>
                         О нас
@@ -322,7 +318,7 @@
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a class="btn" href="#">Подробнее о нас</a>
+                    <a class="btn" href="about.html">Подробнее о нас</a>
                 </section>
                 <section class="contacts">
                     <h2>
@@ -331,8 +327,8 @@
                     <p>
                         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                     </p>
-                    <a class="map" href="#"><img src="img/map.png" width="560" height="222" alt="map_popup"></a>
-                    <a class="btn" href="#">Напишите нам</a>
+                    <a class="map" href="bigmap.html"><img src="img/map.png" width="560" height="222" alt="map_popup"></a>
+                    <a class="btn" href="write_us.html">Напишите нам</a>
                 </section>
             </section>
         </div>
@@ -341,26 +337,26 @@
                 <div class="footer_top">
                     <a class="footer_logo">device</a>
                     <ul>
-                        <li><a class="login" href="#">Войти</a></li>
-                        <li><a class="comparison" href="#">Сравнить</a></li>
-                        <li><a class="cart" href="#">Корзина</a></li>
+                        <li><a class="login" href="login.html">Войти</a></li>
+                        <li><a class="comparison" href="comparison.html">Сравнить</a></li>
+                        <li><a class="cart" href="cart.html">Корзина</a></li>
                     </ul>
                 </div>
                 <div class="footer_middle">
                     <p class="address">г. Москва, ул. Строителей, 15</p>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="delivery.html">
                             Доставка
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="warranty.html">
                             Гарантия
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="contacts.html">
                             Контакты
                             </a>
                         </li>
@@ -369,17 +365,17 @@
                 </div>
                 <div class="footer_bottom">
                     <ul class="social_buttons">
-                        <li><a class="fb" href="#">Facebook</a></li>
-                        <li><a class="ingrm" href="#">Instagram</a></li>
-                        <li><a class="twt" href="#">Twitter</a></li>
+                        <li><a class="fb" href="https://www.facebook.com">Facebook</a></li>
+                        <li><a class="ingrm" href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a class="twt" href="https://twitter.com/">Twitter</a></li>
                     </ul>
-                    <a class="academylogo" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
+                    <a class="academylogo" href="https://htmlacademy.ru/intensive/htmlcss">HTMLACADEMY</a>
                 </div>
             </div>
         </footer>
         <section class="write_us_popup">
-            <h2 class="visually_hidden">Write Us Pop-up</h2>
-            <form>
+            <h2 class="visually_hidden">Окно обратной связи</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
                 <div class="input_fields">
                     <label>Ваше имя:<br>
                     <input pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" class="nameform" type="text" name="name" placeholder="Представьтесь, пожалуйста">
@@ -392,15 +388,18 @@
                 <textarea name="mail_txt" id="mail" placeholder="В свободной форме"></textarea>
                 </label>
                 <button class="send_button" type="submit" value="Отправить">Отправить</button>
+            </form>
+            <form action="index.html#contacts">
                 <button  class="popup_close" type="submit">Закрыть</button>
             </form>
         </section>
         <section class="popup_map">
-            <h2 class="visually_hidden">Pop-up Map</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.5274293158209!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!5e0!3m2!1suk!2sua!4v1504831499195" width="994" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
-           
-            <button class="popup_close" type="button">Закрыть</button>
+            <h2 class="visually_hidden">Всплывающая карта</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.5274293158209!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!5e0!3m2!1suk!2sua!4v1504831499195" width="994" height="593" allowfullscreen></iframe>
+            <form action="index.html#contacts">
+                <button class="popup_close mapclose" type="submit">Закрыть</button>
+            </form>
         </section>
-      <script src="js/popup.js"></script>
+        <script src="js/popup.min.js"></script> 
     </body>
 </html>
