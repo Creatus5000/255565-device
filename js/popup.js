@@ -18,35 +18,32 @@ var email = popup.querySelector("[name=email]");
 
 var text = popup.querySelector("[name=mail_txt]");
 
-link.addEventListener("click", function (evt)
-{
+link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal_show");
 
 });
 
-close.addEventListener("click", function (evt)
-{
+close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal_show");
+    popup.classList.remove("modal_error");
 });
 
-form.addEventListener("submit", function (evt)
-{
-    if (!inputname.value || !email.value || !text.value)
-    {
+form.addEventListener("submit", function (evt) {
+    if (!inputname.value || !email.value || !text.value) {
         evt.preventDefault();
-        console.log("Нужно ввести данные");
+        popup.classList.remove("modal_error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal_error");
     }
 });
 
-window.addEventListener("keydown", function (evt)
-{
-    if (evt.keyCode === 27)
-    {
-        if (popup.classList.contains("modal_show"))
-        {
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        if (popup.classList.contains("modal_show")) {
             popup.classList.remove("modal_show");
+            popup.classList.remove("modal_error");
         }
     }
 });
@@ -55,30 +52,24 @@ var maplink = document.querySelector(".map");
 
 var mappopup = document.querySelector(".popup_map");
 
-maplink.addEventListener("click", function (evt)
-{
+maplink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mappopup.classList.add("modal_show");
 });
 
-mapLink.addEventListener("click", function (evt)
-{
+mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal_show");
 });
 
-mapClose.addEventListener("click", function (evt)
-{
+mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.remove("modal_show");
 });
 
-window.addEventListener("keydown", function (evt)
-{
-    if (evt.keyCode === 27)
-    {
-        if (mapPopup.classList.contains("modal_show"))
-        {
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("modal_show")) {
             mapPopup.classList.remove("modal_show");
         }
     }
